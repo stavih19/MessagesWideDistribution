@@ -3,8 +3,8 @@ import time
 import openpyxl
 from pathlib import Path
 
-xlsx_file = Path('Guests.xlsx')
-# xlsx_file = Path('Test.xlsx')
+# xlsx_file = Path('Guests.xlsx')
+xlsx_file = Path('Test.xlsx')
 wb_obj = openpyxl.load_workbook(xlsx_file)
 sheet = wb_obj.active
 rows = list(sheet.iter_rows())[2:]
